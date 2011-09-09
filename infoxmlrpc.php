@@ -5,7 +5,7 @@ Description:    Add methods to get blogs, users of blog by role, recent publishe
 Version:        0.1.1
 Author:         Yazna Garcia Vega
 Author Email:   yazna@infomed.sld.cu
- */
+*/
 include_once(ABSPATH . WPINC . '/class-IXR.php');
 
 add_filter('disable_captions', create_function('$a','return true;'));
@@ -784,6 +784,4 @@ function info_getAttachments($id) {
     $ret_att = $total_att ? array('total' => $total_att, 'list' => $att_links) : NULL;
 	return $ret_att;
 }
-
-
 ?>
